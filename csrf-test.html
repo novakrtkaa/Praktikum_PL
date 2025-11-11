@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CSRF Attack Test</title>
+</head>
+<body>
+  <h2>⚠️ Simulasi Serangan CSRF</h2>
+  <p>Form ini <strong>tidak memiliki token CSRF</strong>. Jika sistem kamu aman, request akan ditolak (403 Forbidden).</p>
+
+  <form action="http://localhost/badminton_mvc/reservations/store" method="POST">
+    <input type="hidden" name="customer_name" value="Hacker Test">
+    <input type="hidden" name="court_id" value="1">
+    <input type="hidden" name="start_time" value="2025-11-02T08:00">
+    <input type="hidden" name="end_time" value="2025-11-02T09:00">
+    <input type="hidden" name="status" value="aktif">
+    <button type="submit">Kirim Serangan</button>
+  </form>
+</body>
+</html>

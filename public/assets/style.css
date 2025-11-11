@@ -1,0 +1,139 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav {
+  background: #e8f0fe;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  margin: 1.5rem auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #004c99;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #e8f0fe;
+}
+
+.btn {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #004c99;
+}
+
+.btn-danger {
+  background-color: #cc0000;
+}
+
+.btn-danger:hover {
+  background-color: #990000;
+}
+
+.btn-secondary {
+  background-color: #888;
+}
+
+input[type=text], input[type=datetime-local], input[type=email], select {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.3rem 0 0.7rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+.alert {
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.alert-success {
+  background-color: #d1f7d1;
+  color: #0a6b0a;
+}
+
+.alert-danger {
+  background-color: #f7d1d1;
+  color: #a40000;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pagination a {
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination a.active {
+  background-color: #0066cc;
+  color: white;
+}
+
+.pagination a:hover {
+  background-color: #e8f0fe;
+}

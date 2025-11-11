@@ -1,0 +1,8 @@
+# Redirect semua request ke folder public
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Jika request bukan ke folder public, redirect ke public
+    RewriteCond %{REQUEST_URI} !^/badminton_mvc/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
